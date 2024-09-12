@@ -12,7 +12,7 @@
                         <div class="text-dark pb-2 text-center rounded" id="infoHome">
                             <h2 class="fw-bold mb-4 text-uppercase">Selamat Datang di {{ config('app.name', 'E-Voting App') }}</h2>
                             <h4 class="my-2">{{ $config->event_name }}</h4>
-                            <p class=""><em>Alamat : {{ $config->location }}</em></p>
+                            <p class=""><em><b>{{ $config->location }}</b></em></p>
                         </div>
                         <div class="align-self-center text-center m-3">
                             <a href="{{ route('announcement') }}" class="btn btn-rounded btn-lg btn-dark border-0 shadow-lg">

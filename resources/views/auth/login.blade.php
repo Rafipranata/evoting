@@ -35,7 +35,6 @@
                                     <button type="submit" class="btn btn-rounded btn-lg btn-primary"><i class="bi bi-box-arrow-in-right"></i> Masuk</button>
                                 </div>
                             </div>
-                            <small class="d-block text-center p-3">Belum Terdaftar? <a href="{{ route('register') }}" class="text-decoration-none fw-bold">Buat Akun!</a></small>
                         </form>
                     </div>
                 </div>

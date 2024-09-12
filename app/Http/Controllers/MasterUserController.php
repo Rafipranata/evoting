@@ -60,7 +60,7 @@ class MasterUserController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'username' => 'required|min:14|max:18|unique:users,username',
+            'username' => 'required|unique:users,username',
             'name' => 'required|max:250',
             'password' => 'required|min:6|max:100',
             'birth_date' => 'required'

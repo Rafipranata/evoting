@@ -20,7 +20,7 @@
     @enderror
 </div>
 <div class="form-floating mb-3">
-    <input type="date" class="form-control" id="birth_date" name="birth_date" min="1960-01-01" max="2004-01-01" value="{{ old('birth_date', $profile->birth_date) }}" required>
+    <input type="date" class="form-control" id="birth_date" name="birth_date" min="1960-01-01" max="2009-01-01" value="{{ old('birth_date', $profile->birth_date) }}" required>
     <label for="birth_date" id="label_birth_date">Tanggal Lahir</label>
     @error('birth_date')
     <div class="small text-danger py-1">{{ $message }}</div>

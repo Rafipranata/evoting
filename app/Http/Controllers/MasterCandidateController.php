@@ -132,10 +132,10 @@ class MasterCandidateController extends Controller
             'misi' => 'required'
         ];
         if ($request->id_calon != $candidate->id_calon) {
-            $rules['id_calon'] = 'required|min:14|max:18|unique:candidates';
+            $rules['id_calon'] = 'required|min:10|max:18|unique:candidates';
         }
         if ($request->id_wakil_calon != $candidate->id_wakil_calon) {
-            $rules['id_wakil_calon'] = 'required|min:14|max:18|unique:candidates';
+            $rules['id_wakil_calon'] = 'required|min:10|max:18|unique:candidates';
         }
         if($request->hasFile('foto')){
             $rules['foto'] = 'image|file|max:2048';
